@@ -24,7 +24,7 @@ curlang <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME","English_United States.1252")
 
 # Construct plot
-plot(dat$Datetime,dat$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+plot(dat$Datetime, dat$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 # Copy plot to PNG
 dev.copy(png, "plot2.png", width = 480, height = 480)
